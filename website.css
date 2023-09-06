@@ -1,0 +1,357 @@
+body{
+    background-color: rgb(45, 37, 33);
+}
+
+.logo img{
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    width: 115px;
+    height: 65px;
+    float: left;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(16, 15, 15);
+    overflow: auto;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    /* flex-wrap: wrap; */
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    /* margin: auto; */
+}
+
+select{
+    display: none;
+    font-weight: bolder;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+option{
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+li{
+    padding: 3.5px;
+    margin-right: 34px;
+    list-style: none;
+    margin-top:5px ;
+    /* margin: auto; */
+}
+
+li a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    font-weight: bolder;
+}
+
+.search{
+    /* float: right; */
+    display: flex;
+    width: 14%;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+}
+.search img.search{
+    width: 25px;
+    height: 25px;
+}
+
+.search img{
+    margin:auto;
+    /* filter: invert(100%); */
+}
+.search img.search,.search img.notify{
+    
+    filter: invert(100%);
+    
+}
+
+@media (max-width:800px){
+    nav ul li{
+       display: none;
+    }
+    select{
+        display: block;
+        width: 45%;
+    }
+    .search{
+        width: 20%;
+    }
+}
+
+/* banner */
+.banner{
+    background-image: url('https://ic.c4assets.com/brands/the-good-doctor/b24d15b7-bba0-4939-bf45-e893dd5d46fa.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.banner_content{
+    float: left;
+    width: 50%;
+    height: 100%;
+    /* margin-top: 10%; */
+    color: white;
+    margin-left: 2%;
+}
+
+.banner_title{
+    font-size: 2.5rem;
+}
+
+.banner_description{
+   font-size: 1.5rem;
+}
+
+.banner_controls img{
+    margin: 15px;
+    cursor:pointer;
+}
+
+/* My List */
+.my_list h2,.trending h2,.movies h2,.horror h2,.hindi h2,.top10 h2{
+    text-decoration: underline;
+    font-size: 1.9rem;
+    color: white;
+}
+
+.my_list .list,.trending .trend,.movies .movies_row,.horror .horror,.hindi .hindi{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+
+.my_list .list::-webkit-scrollbar,.trending .trend::-webkit-scrollbar,.movies .movies_row::-webkit-scrollbar,.horror .horror::-webkit-scrollbar,.hindi .hindi::-webkit-scrollbar{
+    display: none;
+}
+
+.my_list .list img,.trending .trend img,.movies .movies_row img,.hindi .hindi img,.horror .horror img{
+    /* padding: 17px; */
+    margin: 10px;
+}
+
+.my_list .list img:hover,.trending .trend img:hover,.movies .movies_row img:hover,.hindi .hindi img:hover,.horror .horror img:hover,.top10 .top10 .S1:hover,.top10 .top10 .S2:hover,.top10 .top10 .S3:hover,.top10 .top10 .S4:hover,.top10 .top10 .S5:hover,.top10 .top10 .S6:hover,.top10 .top10 .S7:hover,.top10 .top10 .S8:hover,.top10 .top10 .S9:hover,.top10 .top10 .S10:hover,.top10 .top10 .M1:hover,.top10 .top10 .M2:hover,.top10 .top10 .M3:hover,.top10 .top10 .M4:hover,.top10 .top10 .M5:hover,.top10 .top10 .M6:hover,.top10 .top10 .M7:hover,.top10 .top10 .M8:hover,.top10 .top10 .M9:hover,.top10 .top10 .M10:hover{
+    transition: 2s ease-out;
+    transform: scale(1.3);
+}
+
+.top10 .top10{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.top10 .top10 .S1{
+    background-image: url('https://w0.peakpx.com/wallpaper/521/33/HD-wallpaper-stranger-things-eleven-millie-netflix-stranger-things-thumbnail.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S2{
+    background-image: url('https://e0.pxfuel.com/wallpapers/910/22/desktop-wallpaper-peaky-blinders-season-4-peaky-blinders-poster-thumbnail.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S3{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S4{
+    background-image: url('https://i0.wp.com/thsindex.org/wp-content/uploads/2023/04/Money-Heist-was-first-released-on-Antena-3-in-Spain-in-2017-Netflix.jpg?fit=1920%2C2560&ssl=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S5{
+    background-image: url('https://dnm.nflximg.net/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABfLoELm7qAipR-TrnWduK1krVszUzTtHilUUdy21yk0zM09fDC059LiqYiwj_KresIOBPMRjU5FtFCIQugEqZMLnBctZVol-GEes9zn8XgDkxUEOJPTWGcgOE7aIOXyf7NuMyQ.jpg?r=a24');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S6{
+    background-image: url('https://deadline.com/wp-content/uploads/2022/08/delhi-crime-2.jpeg?w=729');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S7{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S8{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BOGVmMGYwZTEtOGFlYS00ODRhLTg3M2MtMzc1OGNhNzU3N2IzXkEyXkFqcGdeQXVyNDY4NjAxNTc@._V1_.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S9{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .S10{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/d/da/DarkNetflixPosterEnglish.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+
+/* Top 10 movies */
+.top10 .top10 .M1{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMzE1ZThhYWEtZWYzOS00ODk0LThlNDQtMGIwMTNhNzk1ZjYxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M2{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/0/02/Extraction_2_poster.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M3{
+    background-image: url('https://i1.netflixmovies.com/dibsl9ebc/image/upload/w_600,h_891,c_lfill,g_north/maaaemuvmwcnbgxtt6nn.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M4{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMmRkMGMzYTUtM2E2My00YjZlLWFmZjItMDA5M2EwNjNiZTNjXkEyXkFqcGdeQXVyNDY5MTUyNjU@._V1_FMjpg_UX1000_.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M5{
+    background-image: url('https://occ-0-1167-300.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABT6-tOHKKgHrcAwnMVnQGpkGYVV5Z6tjTiK4n-IeHUWHwDUYK8HNMBrvkhL9lwo4WqmiUkdv7tWqcsoItr53w7E0N1Pq.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M6{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d7/The_Adam_Project_poster.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M7{
+    background-image: url('https://flxt.tmsimg.com/assets/p162369_v_v13_aa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M8{
+    background-image: url('https://cdn.123telugu.com/content/wp-content/uploads/2021/12/beast-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M9{
+    background-image: url('https://occ-0-2604-1009.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABRlmIfV3M7C-tHqq6gRj03lGnKTxMqgtC-cIKWE5YVvr_fM932hU8FxIwo1pH6AZ8Wsdu3W5ZuvVIo86Cf74XZpuxLQQjhjYaghw.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+.top10 .top10 .M10{
+    background-image: url('https://occ-0-858-1722.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABbX85TEKyCPCnzVwfXiRikZAK10je0wCbQLz7MqfMcX93XoKrRxkYr90XihD37yXh8YMjFEs2rjd-9GHlsX13inacoLf2pHy1yxO.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+}
+
+/* footer */
+.credit{
+    display: flex;
+    flex-direction: row;
+}
+.credit li.dev{
+   font-size: 1.5rem;
+}
